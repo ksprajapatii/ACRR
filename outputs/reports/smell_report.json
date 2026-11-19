@@ -1,0 +1,124 @@
+[
+    {
+        "file": "data\\sample_code\\guard_clause_demo.py",
+        "thresholds": {
+            "long_method_loc": 20,
+            "high_complexity": 10,
+            "too_many_parameters": 5,
+            "deep_nesting": 3,
+            "large_class_methods": 10,
+            "large_class_loc": 200,
+            "excessive_conditionals": 5,
+            "low_maintainability": 20
+        },
+        "functions_analyzed": 1,
+        "total_smells": 1,
+        "function_smells": [
+            {
+                "file": "data\\sample_code\\guard_clause_demo.py",
+                "function": "check_access",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            }
+        ],
+        "file_smells": [],
+        "class_smells": [],
+        "smells": [
+            {
+                "file": "data\\sample_code\\guard_clause_demo.py",
+                "function": "check_access",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            }
+        ]
+    },
+    {
+        "file": "data\\sample_code\\sample_app.py",
+        "thresholds": {
+            "long_method_loc": 20,
+            "high_complexity": 10,
+            "too_many_parameters": 5,
+            "deep_nesting": 3,
+            "large_class_methods": 10,
+            "large_class_loc": 200,
+            "excessive_conditionals": 5,
+            "low_maintainability": 20
+        },
+        "functions_analyzed": 3,
+        "total_smells": 3,
+        "function_smells": [
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "process_data",
+                "smell": "Too Many Parameters",
+                "severity": "Medium",
+                "measured_value": 5,
+                "threshold": 5,
+                "explanation": "Function has reached or exceeded the parameter threshold.",
+                "detection_type": "heuristic"
+            },
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "process_data",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            },
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "calculate_total",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            }
+        ],
+        "file_smells": [],
+        "class_smells": [],
+        "smells": [
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "process_data",
+                "smell": "Too Many Parameters",
+                "severity": "Medium",
+                "measured_value": 5,
+                "threshold": 5,
+                "explanation": "Function has reached or exceeded the parameter threshold.",
+                "detection_type": "heuristic"
+            },
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "process_data",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            },
+            {
+                "file": "data\\sample_code\\sample_app.py",
+                "function": "calculate_total",
+                "smell": "Deeply Nested Conditions",
+                "severity": "High",
+                "measured_value": 3,
+                "threshold": 3,
+                "explanation": "Function contains deeply nested control-flow blocks.",
+                "detection_type": "heuristic"
+            }
+        ]
+    }
+]

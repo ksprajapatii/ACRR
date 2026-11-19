@@ -1,0 +1,83 @@
+[
+    {
+        "file": "data\\sample_code\\sample_app.py",
+        "function": "process_data",
+        "class": null,
+        "detected_smell": "Too Many Parameters",
+        "severity": "Medium",
+        "measured_value": 5,
+        "detection_type": "heuristic",
+        "original_source": "def process_data(a, b, c, d, e):\n\n    result = 0\n\n    if a:\n        if b:\n            if c:\n                result = d + e\n\n    return result",
+        "recommended_technique": "Introduce Parameter Object",
+        "recommendation_explanation": "Group related function parameters into a dedicated configuration or data object.",
+        "why_recommended": "A large parameter list makes function calls harder to understand and maintain.",
+        "expected_benefits": [
+            "Simplifies function signatures",
+            "Groups related data",
+            "Improves readability"
+        ],
+        "potential_risks": [
+            "Requires changes to function callers",
+            "Unrelated parameters should not be grouped arbitrarily"
+        ],
+        "automation_status": "Recommendation only; source not modified",
+        "automation_requirements": "Requires caller analysis",
+        "ml_prediction": null,
+        "recommendation_method": "Rule-based baseline",
+        "actual_improvement": null
+    },
+    {
+        "file": "data\\sample_code\\sample_app.py",
+        "function": "process_data",
+        "class": null,
+        "detected_smell": "Deeply Nested Conditions",
+        "severity": "High",
+        "measured_value": 3,
+        "detection_type": "heuristic",
+        "original_source": "def process_data(a, b, c, d, e):\n\n    result = 0\n\n    if a:\n        if b:\n            if c:\n                result = d + e\n\n    return result",
+        "recommended_technique": "Replace Nested Conditions with Guard Clauses",
+        "recommendation_explanation": "Use early returns or early exits to reduce nested control flow.",
+        "why_recommended": "Deep nesting makes the execution path difficult to follow.",
+        "expected_benefits": [
+            "Reduces nesting depth",
+            "Improves readability",
+            "Makes exceptional conditions explicit"
+        ],
+        "potential_risks": [
+            "Early returns can change behavior if side effects are reordered",
+            "All execution paths must be tested"
+        ],
+        "automation_status": "Recommendation only; source not modified",
+        "automation_requirements": "Requires semantic review",
+        "ml_prediction": null,
+        "recommendation_method": "Rule-based baseline",
+        "actual_improvement": null
+    },
+    {
+        "file": "data\\sample_code\\sample_app.py",
+        "function": "calculate_total",
+        "class": null,
+        "detected_smell": "Deeply Nested Conditions",
+        "severity": "High",
+        "measured_value": 3,
+        "detection_type": "heuristic",
+        "original_source": "    def calculate_total(self, items, tax_rate=0.0):\n\n        total = 0\n\n        for item in items:\n\n            if item[\"active\"]:\n\n                if item[\"quantity\"] > 0:\n\n                    total += item[\"price\"] * item[\"quantity\"]\n\n        return total * (1 + tax_rate)",
+        "recommended_technique": "Replace Nested Conditions with Guard Clauses",
+        "recommendation_explanation": "Use early returns or early exits to reduce nested control flow.",
+        "why_recommended": "Deep nesting makes the execution path difficult to follow.",
+        "expected_benefits": [
+            "Reduces nesting depth",
+            "Improves readability",
+            "Makes exceptional conditions explicit"
+        ],
+        "potential_risks": [
+            "Early returns can change behavior if side effects are reordered",
+            "All execution paths must be tested"
+        ],
+        "automation_status": "Recommendation only; source not modified",
+        "automation_requirements": "Requires semantic review",
+        "ml_prediction": null,
+        "recommendation_method": "Rule-based baseline",
+        "actual_improvement": null
+    }
+]

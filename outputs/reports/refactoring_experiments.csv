@@ -1,0 +1,5 @@
+experiment_name,metric,before,after,change
+Guard Clause Refactoring,cyclomatic_complexity,4,4,0
+Guard Clause Refactoring,lines_of_code,6,8,2
+Guard Clause Refactoring,nesting_depth,3,1,-2
+Guard Clause Refactoring,maintainability_index,100.0,72.21,-27.79

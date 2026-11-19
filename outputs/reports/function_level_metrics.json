@@ -1,0 +1,42 @@
+{
+    "process_data": {
+        "before": {
+            "cyclomatic_complexity": 4,
+            "lines_of_code": 7,
+            "nesting_depth": 3,
+            "maintainability_index": 76.29
+        },
+        "after": {
+            "cyclomatic_complexity": 4,
+            "lines_of_code": 5,
+            "nesting_depth": 1,
+            "maintainability_index": 74.02
+        },
+        "changes": {
+            "cyclomatic_complexity": 0,
+            "lines_of_code": -2,
+            "nesting_depth": -2,
+            "maintainability_index": -2.27
+        }
+    },
+    "calculate_total": {
+        "before": {
+            "cyclomatic_complexity": 4,
+            "lines_of_code": 7,
+            "nesting_depth": 2,
+            "maintainability_index": 68.91
+        },
+        "after": {
+            "cyclomatic_complexity": 4,
+            "lines_of_code": 7,
+            "nesting_depth": 1,
+            "maintainability_index": 67.64
+        },
+        "changes": {
+            "cyclomatic_complexity": 0,
+            "lines_of_code": 0,
+            "nesting_depth": -1,
+            "maintainability_index": -1.27
+        }
+    }
+}

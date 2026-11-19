@@ -1,0 +1,60 @@
+{
+    "input_records": 590,
+    "training_records": 472,
+    "testing_records": 118,
+    "training_files": [
+        "data/raw/repositories/click/src/click/__init__.py",
+        "data/raw/repositories/click/src/click/_compat.py",
+        "data/raw/repositories/click/src/click/_textwrap.py",
+        "data/raw/repositories/click/src/click/_utils.py",
+        "data/raw/repositories/click/src/click/_winconsole.py",
+        "data/raw/repositories/click/src/click/core.py",
+        "data/raw/repositories/click/src/click/decorators.py",
+        "data/raw/repositories/click/src/click/exceptions.py",
+        "data/raw/repositories/click/src/click/formatting.py",
+        "data/raw/repositories/click/src/click/globals.py",
+        "data/raw/repositories/click/src/click/parser.py",
+        "data/raw/repositories/click/src/click/termui.py",
+        "data/raw/repositories/click/src/click/types.py",
+        "data/raw/repositories/click/src/click/utils.py",
+        "data/sample_code/sample_app.py"
+    ],
+    "testing_files": [
+        "data/raw/repositories/click/src/click/_termui_impl.py",
+        "data/raw/repositories/click/src/click/shell_completion.py",
+        "data/raw/repositories/click/src/click/testing.py",
+        "data/sample_code/guard_clause_demo.py"
+    ],
+    "file_overlap": [],
+    "test_fraction": 0.2,
+    "feature_columns": [
+        "loc",
+        "cyclomatic_complexity",
+        "nesting_depth",
+        "maintainability_index"
+    ],
+    "target_columns": [
+        "target_long_method",
+        "target_duplicate_code",
+        "target_excessive_conditional_logic",
+        "target_too_many_parameters",
+        "target_deeply_nested_conditions",
+        "target_high_cyclomatic_complexity"
+    ],
+    "training_label_counts": {
+        "target_long_method": 124,
+        "target_duplicate_code": 49,
+        "target_excessive_conditional_logic": 43,
+        "target_too_many_parameters": 42,
+        "target_deeply_nested_conditions": 33,
+        "target_high_cyclomatic_complexity": 31
+    },
+    "testing_label_counts": {
+        "target_long_method": 30,
+        "target_duplicate_code": 11,
+        "target_excessive_conditional_logic": 9,
+        "target_too_many_parameters": 7,
+        "target_deeply_nested_conditions": 8,
+        "target_high_cyclomatic_complexity": 7
+    }
+}

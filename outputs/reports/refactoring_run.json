@@ -1,0 +1,33 @@
+{
+    "experiment": "Guard Clause Refactoring",
+    "status": "success",
+    "input_file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+    "output_file": "D:\\KS\\ACRR\\outputs\\refactored\\guard_clause_demo.py",
+    "original_source_modified": false,
+    "syntax_validation": "passed",
+    "functional_equivalence": {
+        "status": "passed",
+        "function": "check_access",
+        "test_cases_passed": 5,
+        "test_cases_failed": 0,
+        "failures": []
+    },
+    "before_metrics": {
+        "cyclomatic_complexity": 4,
+        "lines_of_code": 6,
+        "nesting_depth": 3,
+        "maintainability_index": 100.0
+    },
+    "after_metrics": {
+        "cyclomatic_complexity": 4,
+        "lines_of_code": 8,
+        "nesting_depth": 1,
+        "maintainability_index": 72.21
+    },
+    "metric_changes": {
+        "cyclomatic_complexity": 0,
+        "lines_of_code": 2,
+        "nesting_depth": -2,
+        "maintainability_index": -27.79
+    }
+}

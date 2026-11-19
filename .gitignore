@@ -1,0 +1,38 @@
+﻿# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Backup files
+*_backup.py
+
+# Cloned external repositories
+data/raw/repositories/
+
+# Python build files
+build/
+dist/
+*.egg-info/

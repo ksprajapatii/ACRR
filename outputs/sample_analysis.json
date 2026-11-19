@@ -1,0 +1,57 @@
+[
+    {
+        "file": "data\\sample_code\\sample_app.py",
+        "total_functions": 3,
+        "total_classes": 1,
+        "functions": [
+            {
+                "name": "classify_number",
+                "start_line": 18,
+                "end_line": 27,
+                "lines_of_code": 10,
+                "parameters": 1,
+                "parameter_names": [
+                    "value"
+                ],
+                "source": "def classify_number(value):\n\n    if value < 0:\n        return \"negative\"\n\n    elif value == 0:\n        return \"zero\"\n\n    else:\n        return \"positive\""
+            },
+            {
+                "name": "process_data",
+                "start_line": 30,
+                "end_line": 39,
+                "lines_of_code": 10,
+                "parameters": 5,
+                "parameter_names": [
+                    "a",
+                    "b",
+                    "c",
+                    "d",
+                    "e"
+                ],
+                "source": "def process_data(a, b, c, d, e):\n\n    result = 0\n\n    if a:\n        if b:\n            if c:\n                result = d + e\n\n    return result"
+            },
+            {
+                "name": "calculate_total",
+                "start_line": 3,
+                "end_line": 15,
+                "lines_of_code": 13,
+                "parameters": 3,
+                "parameter_names": [
+                    "self",
+                    "items",
+                    "tax_rate"
+                ],
+                "source": "    def calculate_total(self, items, tax_rate=0.0):\n\n        total = 0\n\n        for item in items:\n\n            if item[\"active\"]:\n\n                if item[\"quantity\"] > 0:\n\n                    total += item[\"price\"] * item[\"quantity\"]\n\n        return total * (1 + tax_rate)"
+            }
+        ],
+        "classes": [
+            {
+                "name": "OrderProcessor",
+                "methods": [
+                    "calculate_total"
+                ],
+                "method_count": 1
+            }
+        ]
+    }
+]

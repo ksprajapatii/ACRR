@@ -1,0 +1,58 @@
+{
+    "project": "ACRR",
+    "analysis_type": "Machine Learning Prediction",
+    "source_file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+    "confidence_threshold": 0.5,
+    "functions_analyzed": 3,
+    "functions_with_predicted_smells": 3,
+    "results": [
+        {
+            "function": "classify_number",
+            "qualified_name": "classify_number",
+            "start_line": 18,
+            "end_line": 27,
+            "predicted_smells": [
+                {
+                    "smell": "long_method",
+                    "confidence": 0.5702
+                }
+            ]
+        },
+        {
+            "function": "process_data",
+            "qualified_name": "process_data",
+            "start_line": 30,
+            "end_line": 39,
+            "predicted_smells": [
+                {
+                    "smell": "long_method",
+                    "confidence": 0.509
+                },
+                {
+                    "smell": "deeply_nested_conditions",
+                    "confidence": 0.807
+                }
+            ]
+        },
+        {
+            "function": "calculate_total",
+            "qualified_name": "OrderProcessor.calculate_total",
+            "start_line": 3,
+            "end_line": 15,
+            "predicted_smells": [
+                {
+                    "smell": "long_method",
+                    "confidence": 0.694
+                },
+                {
+                    "smell": "too_many_parameters",
+                    "confidence": 0.6168
+                },
+                {
+                    "smell": "deeply_nested_conditions",
+                    "confidence": 0.7672
+                }
+            ]
+        }
+    ]
+}

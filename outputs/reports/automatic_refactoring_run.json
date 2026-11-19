@@ -1,0 +1,102 @@
+{
+    "experiment": "ACRR Automatic Code Refactoring",
+    "function_level_metrics": {
+        "process_data": {
+            "before": {
+                "cyclomatic_complexity": 4,
+                "lines_of_code": 7,
+                "nesting_depth": 3,
+                "maintainability_index": 76.29
+            },
+            "after": {
+                "cyclomatic_complexity": 4,
+                "lines_of_code": 5,
+                "nesting_depth": 1,
+                "maintainability_index": 74.02
+            },
+            "changes": {
+                "cyclomatic_complexity": 0,
+                "lines_of_code": -2,
+                "nesting_depth": -2,
+                "maintainability_index": -2.27
+            }
+        },
+        "calculate_total": {
+            "before": {
+                "cyclomatic_complexity": 4,
+                "lines_of_code": 7,
+                "nesting_depth": 2,
+                "maintainability_index": 68.91
+            },
+            "after": {
+                "cyclomatic_complexity": 4,
+                "lines_of_code": 7,
+                "nesting_depth": 1,
+                "maintainability_index": 67.64
+            },
+            "changes": {
+                "cyclomatic_complexity": 0,
+                "lines_of_code": 0,
+                "nesting_depth": -1,
+                "maintainability_index": -1.27
+            }
+        }
+    },
+    "mode": "automatic",
+    "status": "success",
+    "input_file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+    "output_file": "D:\\KS\\ACRR\\outputs\\refactored\\sample_app.py",
+    "original_source_modified": false,
+    "selected_transformations": [
+        {
+            "function": "process_data",
+            "transformation": "replace_nested_assignment_with_guard",
+            "severity": "High"
+        },
+        {
+            "function": "calculate_total",
+            "transformation": "simplify_nested_conditions_in_loops",
+            "severity": "High"
+        }
+    ],
+    "syntax_validation": "passed",
+    "functional_equivalence": {
+        "status": "passed",
+        "functions": [
+            {
+                "status": "passed",
+                "function": "process_data",
+                "test_cases_passed": 7,
+                "test_cases_failed": 0,
+                "failures": []
+            },
+            {
+                "status": "passed",
+                "function": "calculate_total",
+                "test_cases_passed": 5,
+                "test_cases_failed": 0,
+                "failures": []
+            }
+        ],
+        "total_test_cases_passed": 12,
+        "total_test_cases_failed": 0
+    },
+    "before_metrics": {
+        "cyclomatic_complexity": 16,
+        "lines_of_code": 22,
+        "nesting_depth": 3,
+        "maintainability_index": 55.37
+    },
+    "after_metrics": {
+        "cyclomatic_complexity": 16,
+        "lines_of_code": 20,
+        "nesting_depth": 2,
+        "maintainability_index": 54.72
+    },
+    "metric_changes": {
+        "cyclomatic_complexity": 0,
+        "lines_of_code": -2,
+        "nesting_depth": -1,
+        "maintainability_index": -0.65
+    }
+}
