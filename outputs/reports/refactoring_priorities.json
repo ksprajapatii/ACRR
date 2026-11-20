@@ -1,0 +1,162 @@
+{
+    "tool": "ACRR Refactoring Prioritizer",
+    "version": "1.2.0",
+    "source_report": "D:\\KS\\ACRR\\data\\sample_code",
+    "scoring_weights": {
+        "smell_severity": 0.4,
+        "complexity": 0.3,
+        "nesting": 0.2,
+        "maintainability": 0.1
+    },
+    "scoring_thresholds": {
+        "cyclomatic_complexity": 10,
+        "nesting_depth": 3
+    },
+    "summary": {
+        "functions_prioritized": 4,
+        "priority_counts": {
+            "High": 3,
+            "Low": 1
+        }
+    },
+    "prioritized_functions": [
+        {
+            "file": "sample_app.py",
+            "function": "process_data",
+            "qualified_name": "process_data",
+            "start_line": 30,
+            "end_line": 39,
+            "cyclomatic_complexity": 4,
+            "nesting_depth": 3,
+            "maintainability_index": 55.37,
+            "detected_smells": [
+                {
+                    "name": "Too Many Parameters",
+                    "severity": "Medium"
+                },
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "priority_score": 76.46,
+            "priority": "High",
+            "components": {
+                "smell_severity": 100,
+                "complexity": 40.0,
+                "nesting": 100.0,
+                "maintainability": 44.63
+            },
+            "weighted_contributions": {
+                "smell_severity": 40.0,
+                "complexity": 12.0,
+                "nesting": 20.0,
+                "maintainability": 4.46
+            },
+            "reasons": [
+                "Medium severity smell: Too Many Parameters. Function has reached or exceeded the parameter threshold.",
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ]
+        },
+        {
+            "file": "sample_app.py",
+            "function": "calculate_total",
+            "qualified_name": "OrderProcessor.calculate_total",
+            "start_line": 3,
+            "end_line": 15,
+            "cyclomatic_complexity": 4,
+            "nesting_depth": 3,
+            "maintainability_index": 55.37,
+            "detected_smells": [
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "priority_score": 76.46,
+            "priority": "High",
+            "components": {
+                "smell_severity": 100,
+                "complexity": 40.0,
+                "nesting": 100.0,
+                "maintainability": 44.63
+            },
+            "weighted_contributions": {
+                "smell_severity": 40.0,
+                "complexity": 12.0,
+                "nesting": 20.0,
+                "maintainability": 4.46
+            },
+            "reasons": [
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ]
+        },
+        {
+            "file": "guard_clause_demo.py",
+            "function": "check_access",
+            "qualified_name": "check_access",
+            "start_line": 1,
+            "end_line": 6,
+            "cyclomatic_complexity": 4,
+            "nesting_depth": 3,
+            "maintainability_index": 100.0,
+            "detected_smells": [
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "priority_score": 72.0,
+            "priority": "High",
+            "components": {
+                "smell_severity": 100,
+                "complexity": 40.0,
+                "nesting": 100.0,
+                "maintainability": 0.0
+            },
+            "weighted_contributions": {
+                "smell_severity": 40.0,
+                "complexity": 12.0,
+                "nesting": 20.0,
+                "maintainability": 0.0
+            },
+            "reasons": [
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ]
+        },
+        {
+            "file": "sample_app.py",
+            "function": "classify_number",
+            "qualified_name": "classify_number",
+            "start_line": 18,
+            "end_line": 27,
+            "cyclomatic_complexity": 3,
+            "nesting_depth": 2,
+            "maintainability_index": 55.37,
+            "detected_smells": [],
+            "priority_score": 26.79,
+            "priority": "Low",
+            "components": {
+                "smell_severity": 0.0,
+                "complexity": 30.0,
+                "nesting": 66.67,
+                "maintainability": 44.63
+            },
+            "weighted_contributions": {
+                "smell_severity": 0.0,
+                "complexity": 9.0,
+                "nesting": 13.33,
+                "maintainability": 4.46
+            },
+            "reasons": [
+                "Moderate nesting depth."
+            ]
+        }
+    ]
+}
