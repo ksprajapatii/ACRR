@@ -1,0 +1,238 @@
+{
+    "tool": "ACRR Explainable AI Engine",
+    "version": "1.2.0",
+    "source_report": "D:\\KS\\ACRR\\data\\sample_code",
+    "summary": {
+        "functions_explained": 4
+    },
+    "explanations": [
+        {
+            "function": "process_data",
+            "qualified_name": "process_data",
+            "file": "sample_app.py",
+            "start_line": 30,
+            "end_line": 39,
+            "priority_score": 76.46,
+            "priority": "High",
+            "explanation": "This function received a priority score of 76.46/100 and was classified as High priority.",
+            "contributing_factors": [
+                {
+                    "factor": "smell_severity",
+                    "component_score": 100,
+                    "weighted_contribution": 40.0,
+                    "weight": 0.4,
+                    "explanation": "Smell Severity contributed 40.0 points to the total priority score."
+                },
+                {
+                    "factor": "nesting",
+                    "component_score": 100.0,
+                    "weighted_contribution": 20.0,
+                    "weight": 0.2,
+                    "explanation": "Nesting contributed 20.0 points to the total priority score."
+                },
+                {
+                    "factor": "complexity",
+                    "component_score": 40.0,
+                    "weighted_contribution": 12.0,
+                    "weight": 0.3,
+                    "explanation": "Complexity contributed 12.0 points to the total priority score."
+                },
+                {
+                    "factor": "maintainability",
+                    "component_score": 44.63,
+                    "weighted_contribution": 4.46,
+                    "weight": 0.09993278064082455,
+                    "explanation": "Maintainability contributed 4.46 points to the total priority score."
+                }
+            ],
+            "detected_smells": [
+                {
+                    "name": "Too Many Parameters",
+                    "severity": "Medium"
+                },
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "reasons": [
+                "Medium severity smell: Too Many Parameters. Function has reached or exceeded the parameter threshold.",
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ],
+            "recommended_actions": [
+                "Consider grouping related parameters into a configuration object.",
+                "Review whether the function has too many responsibilities.",
+                "Use guard clauses to reduce nested conditional blocks.",
+                "Simplify complex conditional expressions.",
+                "Reduce cyclomatic complexity by simplifying branches and extracting helper functions.",
+                "Reduce nesting depth using early returns and simpler control flow.",
+                "Improve maintainability by simplifying the function structure."
+            ]
+        },
+        {
+            "function": "calculate_total",
+            "qualified_name": "OrderProcessor.calculate_total",
+            "file": "sample_app.py",
+            "start_line": 3,
+            "end_line": 15,
+            "priority_score": 76.46,
+            "priority": "High",
+            "explanation": "This function received a priority score of 76.46/100 and was classified as High priority.",
+            "contributing_factors": [
+                {
+                    "factor": "smell_severity",
+                    "component_score": 100,
+                    "weighted_contribution": 40.0,
+                    "weight": 0.4,
+                    "explanation": "Smell Severity contributed 40.0 points to the total priority score."
+                },
+                {
+                    "factor": "nesting",
+                    "component_score": 100.0,
+                    "weighted_contribution": 20.0,
+                    "weight": 0.2,
+                    "explanation": "Nesting contributed 20.0 points to the total priority score."
+                },
+                {
+                    "factor": "complexity",
+                    "component_score": 40.0,
+                    "weighted_contribution": 12.0,
+                    "weight": 0.3,
+                    "explanation": "Complexity contributed 12.0 points to the total priority score."
+                },
+                {
+                    "factor": "maintainability",
+                    "component_score": 44.63,
+                    "weighted_contribution": 4.46,
+                    "weight": 0.09993278064082455,
+                    "explanation": "Maintainability contributed 4.46 points to the total priority score."
+                }
+            ],
+            "detected_smells": [
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "reasons": [
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ],
+            "recommended_actions": [
+                "Use guard clauses to reduce nested conditional blocks.",
+                "Simplify complex conditional expressions.",
+                "Reduce cyclomatic complexity by simplifying branches and extracting helper functions.",
+                "Reduce nesting depth using early returns and simpler control flow.",
+                "Improve maintainability by simplifying the function structure."
+            ]
+        },
+        {
+            "function": "check_access",
+            "qualified_name": "check_access",
+            "file": "guard_clause_demo.py",
+            "start_line": 1,
+            "end_line": 6,
+            "priority_score": 72.0,
+            "priority": "High",
+            "explanation": "This function received a priority score of 72.0/100 and was classified as High priority.",
+            "contributing_factors": [
+                {
+                    "factor": "smell_severity",
+                    "component_score": 100,
+                    "weighted_contribution": 40.0,
+                    "weight": 0.4,
+                    "explanation": "Smell Severity contributed 40.0 points to the total priority score."
+                },
+                {
+                    "factor": "nesting",
+                    "component_score": 100.0,
+                    "weighted_contribution": 20.0,
+                    "weight": 0.2,
+                    "explanation": "Nesting contributed 20.0 points to the total priority score."
+                },
+                {
+                    "factor": "complexity",
+                    "component_score": 40.0,
+                    "weighted_contribution": 12.0,
+                    "weight": 0.3,
+                    "explanation": "Complexity contributed 12.0 points to the total priority score."
+                },
+                {
+                    "factor": "maintainability",
+                    "component_score": 0.0,
+                    "weighted_contribution": 0.0,
+                    "weight": 0,
+                    "explanation": "Maintainability contributed 0.0 points to the total priority score."
+                }
+            ],
+            "detected_smells": [
+                {
+                    "name": "Deeply Nested Conditions",
+                    "severity": "High"
+                }
+            ],
+            "reasons": [
+                "High severity smell: Deeply Nested Conditions. Function contains deeply nested control-flow blocks.",
+                "Moderate cyclomatic complexity.",
+                "Deeply nested control-flow structure."
+            ],
+            "recommended_actions": [
+                "Use guard clauses to reduce nested conditional blocks.",
+                "Simplify complex conditional expressions.",
+                "Reduce cyclomatic complexity by simplifying branches and extracting helper functions.",
+                "Reduce nesting depth using early returns and simpler control flow."
+            ]
+        },
+        {
+            "function": "classify_number",
+            "qualified_name": "classify_number",
+            "file": "sample_app.py",
+            "start_line": 18,
+            "end_line": 27,
+            "priority_score": 26.79,
+            "priority": "Low",
+            "explanation": "This function received a priority score of 26.79/100 and was classified as Low priority.",
+            "contributing_factors": [
+                {
+                    "factor": "nesting",
+                    "component_score": 66.67,
+                    "weighted_contribution": 13.33,
+                    "weight": 0.19994000299985001,
+                    "explanation": "Nesting contributed 13.33 points to the total priority score."
+                },
+                {
+                    "factor": "complexity",
+                    "component_score": 30.0,
+                    "weighted_contribution": 9.0,
+                    "weight": 0.3,
+                    "explanation": "Complexity contributed 9.0 points to the total priority score."
+                },
+                {
+                    "factor": "maintainability",
+                    "component_score": 44.63,
+                    "weighted_contribution": 4.46,
+                    "weight": 0.09993278064082455,
+                    "explanation": "Maintainability contributed 4.46 points to the total priority score."
+                },
+                {
+                    "factor": "smell_severity",
+                    "component_score": 0.0,
+                    "weighted_contribution": 0.0,
+                    "weight": 0,
+                    "explanation": "Smell Severity contributed 0.0 points to the total priority score."
+                }
+            ],
+            "detected_smells": [],
+            "reasons": [
+                "Moderate nesting depth."
+            ],
+            "recommended_actions": [
+                "Reduce nesting depth using early returns and simpler control flow.",
+                "Improve maintainability by simplifying the function structure."
+            ]
+        }
+    ]
+}
