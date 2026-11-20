@@ -1,0 +1,269 @@
+{
+    "tool": "ACRR Repository Scanner",
+    "version": "1.1.0",
+    "generated_at": "2026-11-20T06:12:17.273290+00:00",
+    "repository": "D:\\KS\\ACRR\\data\\sample_code",
+    "summary": {
+        "files_discovered": 2,
+        "files_scanned": 2,
+        "files_failed": 0,
+        "total_functions": 4,
+        "total_classes": 1,
+        "total_smells": 4,
+        "smell_counts": {
+            "Deeply Nested Conditions": 3,
+            "Too Many Parameters": 1
+        },
+        "severity_counts": {
+            "High": 3,
+            "Medium": 1
+        }
+    },
+    "files": [
+        {
+            "file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+            "relative_path": "guard_clause_demo.py",
+            "status": "success",
+            "functions_analyzed": 1,
+            "classes_analyzed": 0,
+            "metrics": [
+                {
+                    "file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+                    "function": "check_access",
+                    "qualified_name": "check_access",
+                    "start_line": 1,
+                    "end_line": 6,
+                    "loc": 6,
+                    "parameters": 3,
+                    "cyclomatic_complexity": 4,
+                    "branches": 3,
+                    "nesting_depth": 3,
+                    "conditionals": 3,
+                    "loops": 0,
+                    "dependencies": 0,
+                    "function_calls": "",
+                    "maintainability_index": 100.0,
+                    "maintainability_rank": "A",
+                    "file_sloc": 6,
+                    "file_comments": 0
+                }
+            ],
+            "smell_analysis": {
+                "file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+                "thresholds": {
+                    "long_method_loc": 20,
+                    "high_complexity": 10,
+                    "too_many_parameters": 5,
+                    "deep_nesting": 3,
+                    "large_class_methods": 10,
+                    "large_class_loc": 200,
+                    "excessive_conditionals": 5,
+                    "low_maintainability": 20
+                },
+                "functions_analyzed": 1,
+                "total_smells": 1,
+                "function_smells": [
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+                        "function": "check_access",
+                        "qualified_name": "check_access",
+                        "start_line": 1,
+                        "end_line": 6,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    }
+                ],
+                "file_smells": [],
+                "class_smells": [],
+                "smells": [
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\guard_clause_demo.py",
+                        "function": "check_access",
+                        "qualified_name": "check_access",
+                        "start_line": 1,
+                        "end_line": 6,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+            "relative_path": "sample_app.py",
+            "status": "success",
+            "functions_analyzed": 3,
+            "classes_analyzed": 1,
+            "metrics": [
+                {
+                    "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                    "function": "classify_number",
+                    "qualified_name": "classify_number",
+                    "start_line": 18,
+                    "end_line": 27,
+                    "loc": 10,
+                    "parameters": 1,
+                    "cyclomatic_complexity": 3,
+                    "branches": 2,
+                    "nesting_depth": 2,
+                    "conditionals": 2,
+                    "loops": 0,
+                    "dependencies": 0,
+                    "function_calls": "",
+                    "maintainability_index": 55.37,
+                    "maintainability_rank": "A",
+                    "file_sloc": 22,
+                    "file_comments": 0
+                },
+                {
+                    "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                    "function": "process_data",
+                    "qualified_name": "process_data",
+                    "start_line": 30,
+                    "end_line": 39,
+                    "loc": 10,
+                    "parameters": 5,
+                    "cyclomatic_complexity": 4,
+                    "branches": 3,
+                    "nesting_depth": 3,
+                    "conditionals": 3,
+                    "loops": 0,
+                    "dependencies": 0,
+                    "function_calls": "",
+                    "maintainability_index": 55.37,
+                    "maintainability_rank": "A",
+                    "file_sloc": 22,
+                    "file_comments": 0
+                },
+                {
+                    "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                    "function": "calculate_total",
+                    "qualified_name": "OrderProcessor.calculate_total",
+                    "start_line": 3,
+                    "end_line": 15,
+                    "loc": 13,
+                    "parameters": 3,
+                    "cyclomatic_complexity": 4,
+                    "branches": 3,
+                    "nesting_depth": 3,
+                    "conditionals": 2,
+                    "loops": 1,
+                    "dependencies": 0,
+                    "function_calls": "",
+                    "maintainability_index": 55.37,
+                    "maintainability_rank": "A",
+                    "file_sloc": 22,
+                    "file_comments": 0
+                }
+            ],
+            "smell_analysis": {
+                "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                "thresholds": {
+                    "long_method_loc": 20,
+                    "high_complexity": 10,
+                    "too_many_parameters": 5,
+                    "deep_nesting": 3,
+                    "large_class_methods": 10,
+                    "large_class_loc": 200,
+                    "excessive_conditionals": 5,
+                    "low_maintainability": 20
+                },
+                "functions_analyzed": 3,
+                "total_smells": 3,
+                "function_smells": [
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "process_data",
+                        "qualified_name": "process_data",
+                        "start_line": 30,
+                        "end_line": 39,
+                        "smell": "Too Many Parameters",
+                        "severity": "Medium",
+                        "measured_value": 5,
+                        "threshold": 5,
+                        "explanation": "Function has reached or exceeded the parameter threshold.",
+                        "detection_type": "heuristic"
+                    },
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "process_data",
+                        "qualified_name": "process_data",
+                        "start_line": 30,
+                        "end_line": 39,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    },
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "calculate_total",
+                        "qualified_name": "OrderProcessor.calculate_total",
+                        "start_line": 3,
+                        "end_line": 15,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    }
+                ],
+                "file_smells": [],
+                "class_smells": [],
+                "smells": [
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "process_data",
+                        "qualified_name": "process_data",
+                        "start_line": 30,
+                        "end_line": 39,
+                        "smell": "Too Many Parameters",
+                        "severity": "Medium",
+                        "measured_value": 5,
+                        "threshold": 5,
+                        "explanation": "Function has reached or exceeded the parameter threshold.",
+                        "detection_type": "heuristic"
+                    },
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "process_data",
+                        "qualified_name": "process_data",
+                        "start_line": 30,
+                        "end_line": 39,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    },
+                    {
+                        "file": "D:\\KS\\ACRR\\data\\sample_code\\sample_app.py",
+                        "function": "calculate_total",
+                        "qualified_name": "OrderProcessor.calculate_total",
+                        "start_line": 3,
+                        "end_line": 15,
+                        "smell": "Deeply Nested Conditions",
+                        "severity": "High",
+                        "measured_value": 3,
+                        "threshold": 3,
+                        "explanation": "Function contains deeply nested control-flow blocks.",
+                        "detection_type": "heuristic"
+                    }
+                ]
+            }
+        }
+    ],
+    "errors": []
+}
