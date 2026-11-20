@@ -1,0 +1,137 @@
+{
+    "tool": "ACRR Advanced Metrics",
+    "version": "1.1.0",
+    "generated_at": "2026-11-20T06:17:49.344869+00:00",
+    "file": "data\\sample_code\\sample_app.py",
+    "file_metrics": {
+        "physical_loc": 39,
+        "nonblank_loc": 22,
+        "comment_lines": 0,
+        "comment_density_percent": 0.0,
+        "halstead": {
+            "h1": 5,
+            "h2": 13,
+            "N1": 8,
+            "N2": 16,
+            "vocabulary": 18,
+            "length": 24,
+            "calculated_length": 59.715356810271004,
+            "volume": 100.07820003461549,
+            "difficulty": 3.076923076923077,
+            "effort": 307.9329231834323,
+            "time": 17.107384621301794,
+            "bugs": 0.0333594000115385
+        }
+    },
+    "total_functions": 3,
+    "functions": [
+        {
+            "function": "calculate_total",
+            "qualified_name": "OrderProcessor.calculate_total",
+            "start_line": 3,
+            "end_line": 15,
+            "function_loc": 13,
+            "comment_lines": 0,
+            "comment_density_percent": 0.0,
+            "structural_metrics": {
+                "return_count": 1,
+                "raise_count": 0,
+                "yield_count": 0,
+                "await_count": 0,
+                "assert_count": 0,
+                "exception_handler_count": 0,
+                "comprehension_count": 0,
+                "boolean_operation_count": 0,
+                "branch_points": 3,
+                "nested_function_count": 0,
+                "nested_class_count": 0
+            },
+            "halstead": {
+                "h1": 3,
+                "h2": 9,
+                "N1": 5,
+                "N2": 10,
+                "vocabulary": 12,
+                "length": 15,
+                "calculated_length": 33.28421251514428,
+                "volume": 53.77443751081735,
+                "difficulty": 1.6666666666666667,
+                "effort": 89.62406251802892,
+                "time": 4.9791145843349405,
+                "bugs": 0.017924812503605784
+            }
+        },
+        {
+            "function": "classify_number",
+            "qualified_name": "classify_number",
+            "start_line": 18,
+            "end_line": 27,
+            "function_loc": 10,
+            "comment_lines": 0,
+            "comment_density_percent": 0.0,
+            "structural_metrics": {
+                "return_count": 3,
+                "raise_count": 0,
+                "yield_count": 0,
+                "await_count": 0,
+                "assert_count": 0,
+                "exception_handler_count": 0,
+                "comprehension_count": 0,
+                "boolean_operation_count": 0,
+                "branch_points": 2,
+                "nested_function_count": 0,
+                "nested_class_count": 0
+            },
+            "halstead": {
+                "h1": 2,
+                "h2": 2,
+                "N1": 2,
+                "N2": 4,
+                "vocabulary": 4,
+                "length": 6,
+                "calculated_length": 4.0,
+                "volume": 12.0,
+                "difficulty": 2.0,
+                "effort": 24.0,
+                "time": 1.3333333333333333,
+                "bugs": 0.004
+            }
+        },
+        {
+            "function": "process_data",
+            "qualified_name": "process_data",
+            "start_line": 30,
+            "end_line": 39,
+            "function_loc": 10,
+            "comment_lines": 0,
+            "comment_density_percent": 0.0,
+            "structural_metrics": {
+                "return_count": 1,
+                "raise_count": 0,
+                "yield_count": 0,
+                "await_count": 0,
+                "assert_count": 0,
+                "exception_handler_count": 0,
+                "comprehension_count": 0,
+                "boolean_operation_count": 0,
+                "branch_points": 3,
+                "nested_function_count": 0,
+                "nested_class_count": 0
+            },
+            "halstead": {
+                "h1": 1,
+                "h2": 2,
+                "N1": 1,
+                "N2": 2,
+                "vocabulary": 3,
+                "length": 3,
+                "calculated_length": 2.0,
+                "volume": 4.754887502163469,
+                "difficulty": 0.5,
+                "effort": 2.3774437510817346,
+                "time": 0.1320802083934297,
+                "bugs": 0.0015849625007211565
+            }
+        }
+    ]
+}
